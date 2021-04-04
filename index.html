@@ -2,10 +2,65 @@
 
   <head>
     <title>MW 2020</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: rgb(239, 239, 239);
+      color: rgb(177, 137, 16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    #content-container {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #cf {
+      font-size: 30px;
+      font-weight: 100;
+    }
+
+    #date {
+      font-size: 20px;
+      font-weight: 100;
+    }
+
+    #rosemary-img {
+      width: 150px;
+    }
+
+    p {
+      font-weight: 100;
+    }
+
+    #hr {
+      box-shadow: 0 0.5px 0 rgb(177, 137, 16);
+      min-height: 1px;
+    }
+  </style>
+
   <body>
-    <h1>Hello world</h1>
+    <div id="content-container">
+      <img id="rosemary-img" src="./favpng_rosemary.png"/>
+
+      <h1 id="cf">C & F</h1>
+
+      <p>AUG 7</p>
+
+      <div id="hr"> </div>
+
+      <p>
+        SÄTTRA GÅRD, MUNSÖ
+      </p>
+    </div>
   </body>
 
 </html>
