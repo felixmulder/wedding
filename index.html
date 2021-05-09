@@ -27,6 +27,14 @@
       max-width: 500px;
     }
 
+    .info h1 {
+      margin-top: 100px;
+    }
+
+    .info h1:first-child {
+      margin-top: 0;
+    }
+
     h1 {
       font-size: 1.5em;
       font-weight: 100;
@@ -83,30 +91,32 @@
 
   <body>
     <div class="content-container">
-      <h1 id="cf">C & F</h1>
+      <div style="display:flex;" class="content-container">
+        <h1 id="cf">C & F</h1>
 
-      <div id="date-container">
-        <p>AUG 7 </p>
-        <p>—</p>
-        <p>2021</p>
-      </div>
+        <div id="date-container">
+          <p>AUG 7 </p>
+          <p>—</p>
+          <p>2021</p>
+        </div>
 
 
-      <div id="hr"> </div>
+        <div id="hr"> </div>
 
-      <p>
-        SÄTTRA GÅRD, MUNSÖ
-      </p>
+        <p>
+          SÄTTRA GÅRD, MUNSÖ
+        </p>
 
-      <img id="rosemary-img" src="./favpng_rosemary.png"/>
+        <img id="rosemary-img" src="./favpng_rosemary.png"/>
 
-      <div id="scroll-down">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
-        </svg>
+        <div id="scroll-down">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+          </svg>
+        </div>
       </div>
     </div>
-    <div class="content-container">
+    <div class="content-container info">
       <h1>Kära vänner och familj</h1>
       <p>
         Vad kul att ni fått vår inbjudan, och att ni hittat hit till denna sida!
