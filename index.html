@@ -1,5 +1,4 @@
 <html>
-
   <head>
     <title>MW 2021</title>
     <meta charset="UTF-8">
@@ -14,15 +13,23 @@
       background-color: rgb(239, 239, 239);
       color: rgb(177, 137, 16);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       min-height: calc(100vh - 100px);
     }
 
-    #content-container {
+    .content-container {
       flex-direction: column;
       justify-content: center;
+      min-height: 100vh;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: 100;
     }
 
     #cf {
@@ -34,8 +41,8 @@
       width: 200px;
     }
 
-    p {
-      font-size: 2em;
+    .content-container, p {
+      font-size: 18px;
       font-weight: 100;
     }
 
@@ -51,11 +58,31 @@
     #date-container p {
       margin: 0 auto;
     }
+
+    #scroll-down {
+      margin-top: 2em;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    #scroll-down > svg {
+      width: 35px;
+    }
+
+    @keyframes bounce {
+      50% {
+        transform: translateY(50%);
+      }
+    }
+
+    ol > li {
+      margin-bottom: 2em;
+    }
   </style>
 
   <body>
-    <div id="content-container">
-
+    <div class="content-container">
       <h1 id="cf">C & F</h1>
 
       <div id="date-container">
@@ -72,6 +99,124 @@
       </p>
 
       <img id="rosemary-img" src="./favpng_rosemary.png"/>
+
+      <div id="scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+    <div class="content-container">
+      <h1>Kära vänner och familj</h1>
+      <p>
+        Vad kul att ni fått vår inbjudan, och att ni hittat hit till denna sida!
+      </p>
+      <p>
+        Vi ser så mycket fram emot att få fira vårt bröllop med er.
+      </p>
+
+      <h1>Plats</h1>
+      <p>
+        Vi vill bara börja med att adressera ändringen av plats. Som ni märkt har vi på
+        grund av rådande omständigheter behövt tänka om när det gäller plats för vår
+        bröllopsfest. Eftersom vi hoppas att restriktionerna är mindre snäva för
+        privata tillställningar än för verksamheter har vi valt att byta plats till
+        Carolines föräldrars gård på Ekerö i Stockholm. Vi ber om ursäkt ifall det
+        stökar till sommarplanerna, men hoppas ändå att få se just dig där!
+      </p>
+      <p>
+        Med andra ord hoppas vi verkligen att denna tillställning blir av! Vi
+        kommer att vara utomhus hela dagen, och brudparet kommer hoppeligen
+        även vara vaccinerade och redo för pussar och kramar :) Skulle vi dock
+        av uppenbara skäl vara tvugna att ställa in, kommer vi att höra av oss
+        till alla er som OSAt ja samt uppdatera denna hemsida.
+      </p>
+
+
+      <h1>OSA</h1>
+      <p>
+        När det gäller oss-datum har vi valt att förlänga det till 20e juni. Osa kan du
+        göra genom att fylla i <a href="#">detta formulär</a> eller genomt att maila till
+        oss på <a href="mailto:felix.mulder@gmail.com">felix.mulder@gmail.com</a>.
+      </p>
+
+      <h1>Boende och transport</h1>
+      <p>
+        Tyvärr finns det inte mycket att erbjuda på landet kring hotell, så vad
+        det gäller boende/transport kommer vi att rekommendera två olika
+        alternativ:
+      </p>
+
+      <ol>
+        <li>
+          För er som vill bo inne i innerstaden kommer vi att erbjuda
+          busstransport från Stockholm city samma dag med hemresa tillbaka
+          under festnatten. Buss kommer att avgå runt 12 lördag 7e (adress
+          TBA) och ta er till  Munsö Sättra 1, samt tillbaka till
+          Stockholm city runt 01.00.
+        </li>
+        <li>
+          För er som önskar en mer intim upplevelse kommer det att
+          finnas platser i ett antal 20-manna tält på gården. Då är man välkommen
+          att även sova över dagen/kvällen innan om man vill. Toalett och
+          duschmöjligheter finns i husen. Skriv i er OSA om ni önskar
+          tältplats!
+        </li>
+        <li>
+          Det finns air bnb till viss del längre ner på Ekerö, men eftersom
+          det är en bit bort och man kanske inte alltid vill köra själv så
+          rekommenderar vi att förboka taxi de tider/sträckor som ni önskar
+          mellan era boenden och gården.
+        </li>
+      </ol>
+
+      <h1>Toastmasters & tal!</h1>
+      <p>
+        Våra toastmasters för kvällen kommer att anslås inom kort, och
+        även info om hur en når dessa! Tänk gärna ut något tillsvidare :)
+      </p>
+
+      <h1>Förfest och Öppen-gård fredag 6e kl 16-23!</h1>
+        <p>
+          Vi vill ju gärna erbjuda samma möjligheter till förkör kvällen innan dagen D
+          som om vi hade varit i Skåne, så för de som vill kommer det att grillas korv
+          och drickas bärs på gården kvällen innan! Det kommer även att vara öppet för en
+          större skara familjevänner, så vi blir ett stort gäng! Kom och spela krocket,
+          kubb, och bara häng!
+        </p>
+
+      <h1>Presenter</h1>
+      <p>
+        Er närvaro är den bästa presenten! Vi äger redan mer fysiska prylar än
+        vad vi borde, så fysiska ting undanbedes tacksamt. Vill man bidra till
+        en framtida bröllopsresa så kan man swisha Jeanette Vitasp på
+        <a href="tel:0706184882">0706184882</a> :)
+      </p>
+
+      <h1>Mer info om dagen</h1>
+      <p>
+        Vi kommer att börja eftermiddagen med bubbel och mingel, tätt följt av
+        en lovordsceremoni. Därefter lär vi känna varandra genom lekar och
+        quiz, innan vi sätter oss ner i det stora partytältet på ängen och äter
+        en god middag tillsammans. Sen blir det dans till en rad olika DJs,
+        häng i baren eller deep-talk i något av de olika sittgrupperna :)
+      </p>
+
+      <h1>Vad är en lovordsceremoni?</h1>
+      <p>
+        För er som inte vet, så kommer vi att viga oss med närmsta familjen
+        tidigare under sommaren. Därför kommer denna ceremoni vara symbolisk
+        och lite kortare - med andra ord kommer dagen ha mer fokus på fest ;)
+      </p>
+
+      <h1>Klädkod</h1>
+      <p>
+        Sommarfin! Vi vill dock uppmärksamma er på att vi kommer att vara på en
+        gård! Det kommer att vara gräs och grus, så välj ett par skor ni kan
+        känna er bekväma i. Eftersom vi kommer vara ute hela dagen och natten
+        är det bra med kläder efter väder; t.ex. en varm tröja till kvällen,
+        eller lämpliga kläder ifall det (gud förbjude) skulle regna på dagen.
+      </p>
     </div>
   </body>
 
