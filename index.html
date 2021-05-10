@@ -54,7 +54,7 @@
       font-weight: 100;
     }
 
-    #hr {
+    .hr {
       box-shadow: 0 0.5px 0 rgb(177, 137, 16);
       min-height: 1px;
     }
@@ -87,6 +87,16 @@
     ol > li {
       margin-bottom: 2em;
     }
+
+    #munso {
+      max-width: 350px;
+      filter: grayscale(50%);
+    }
+
+    #munso-map {
+      max-width: 350px;
+      filter: grayscale(100%);
+    }
   </style>
 
   <body>
@@ -101,7 +111,7 @@
         </div>
 
 
-        <div id="hr"> </div>
+        <div class="hr"> </div>
 
         <p>
           SÄTTRA GÅRD, MUNSÖ
@@ -126,6 +136,13 @@
       </p>
 
       <h1>Plats</h1>
+      <img id="munso" src="./munso.jpg"/>
+      <p>
+        SÄTTRA GÅRD, MUNSÖ
+      </p>
+      <a target="blank" href="https://goo.gl/maps/rSXWb2udvmzeSivW7">
+        <img id="munso-map" src="./map.png"/>
+      </a>
       <p>
         Vi vill bara börja med att adressera ändringen av plats. Som ni märkt har vi på
         grund av rådande omständigheter behövt tänka om när det gäller plats för vår
@@ -146,8 +163,8 @@
       <h1>OSA</h1>
       <p>
         När det gäller oss-datum har vi valt att förlänga det till 20e juni. Osa kan du
-        göra genom att fylla i <a href="#">detta formulär</a> eller genomt att maila till
-        oss på <a href="mailto:felix.mulder@gmail.com">felix.mulder@gmail.com</a>.
+        göra genom att fylla i <a target="_blank" href="https://forms.gle/a3XMLSx3T7RQ1eci9">detta formulär</a>
+        eller genomt att maila till oss på <a href="mailto:felix.mulder@gmail.com">felix.mulder@gmail.com</a>.
       </p>
 
       <h1>Boende och transport</h1>
@@ -227,7 +244,10 @@
         är det bra med kläder efter väder; t.ex. en varm tröja till kvällen,
         eller lämpliga kläder ifall det (gud förbjude) skulle regna på dagen.
       </p>
+
+      <div class="hr"> </div>
     </div>
+    <h1>Hälsningar, Caroline & Felix</h1>
   </body>
 
 </html>
