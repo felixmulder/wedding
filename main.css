@@ -13,6 +13,7 @@ body {
 .content-container {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   max-width: 500px;
 }
