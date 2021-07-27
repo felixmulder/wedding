@@ -84,7 +84,12 @@ ol > li {
   filter: grayscale(50%);
 }
 
-#munso-map {
+.munso-map {
   max-width: 350px;
   filter: grayscale(100%);
+}
+
+.parking-map {
+  max-width: 400px;
+  margin: 20px 0;
 }
